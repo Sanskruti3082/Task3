@@ -11,8 +11,39 @@
    
 
   }
-  .container{
+  /*.container{
     display: flex;
     flex-direction: column;
    
+  } */
+ 
+  #vertical-line {
+    position: absolute;
+    top: 5;
+    left: 50%;
+    width: 2px; /* Adjust the width as needed */
+    height: 220vh; /* Make the line span the full height of the viewport */
+    background-color: black; /* Change the color as needed */
   }
+  .horizontal-line {
+    border:#080808; /* Remove default border */
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: #000; /* Set the color of the line */
+    margin: 20px 0; /* Adjust the margin as needed */
+  }
+ 
+  .font {
+    width: 384px;
+    height: 68px;
+    top: 378px;
+    left: 447px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .font2 {
+    top: 343px;
+    left: 576px;
+    gap: 0px;
+    opacity: 0px;
+        
+  } 
