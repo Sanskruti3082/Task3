@@ -5,26 +5,25 @@
     
   }
   .container{
+    position: relative;
     height: 1430px;
+    top: 185px;
+    max-width: 865px !important;
   }
-  /*.container{
-    display: flex;
-    flex-direction: column;
-   
-  } */
+  
  
   #vertical-line {
     position: absolute;
-    top: 330px;
+    top: 380px;
     left: 50%;
-    width: 2px; /* Adjust the width as needed */
-    height: 250vh; /* Make the line span the full height of the viewport */
-    background-color: #4D5628; /* Change the color as needed */
+    width: 2px; 
+    height: 1720px; 
+    background-color: #4D5628; 
   }
   .horizontal-line {
-    height: 2px; /* Adjust the thickness of the line */
-    background-color:#4D5628; /* Set the color of the line */
-    --bs-gutter-x: 0 !important;
+    height: 2px; 
+    background-color:#4D5628; 
+    opacity: 100% !important;
   }
 
   @media(max-width:766px){
@@ -32,9 +31,23 @@
       position: absolute;
       top: 0;
       left: 0%;
-      width: 0px; /* Adjust the width as needed */
-      height: 0vh; /* Make the line span the full height of the viewport */
-      background-color: none; /* Change the color as needed */
+      width: 0px; 
+      height: 0vh; 
+      background-color: none; 
     }
+  .vertical-line .bi-circle-fill::before {
+    content: "none" !important;
   }
+}
+.row{
+  --bs-gutter-x: 0rem !important;
+}
+
+/** Mozilla Firefox */
+@-moz-document url-prefix(){
+  span .hl{
+    bottom: 0px;
+    top: 4px;
+  }
+}
  
